@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="520.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.loginController">
+   <left>
+      <AnchorPane prefHeight="447.0" prefWidth="228.0" style="-fx-background-color: #383861;" BorderPane.alignment="CENTER">
+         <children>
+            <Label alignment="CENTER" layoutX="2.0" layoutY="33.0" prefHeight="52.0" prefWidth="230.0" text="Product" textFill="#ede6b9">
+               <font>
+                  <Font name="Verdana" size="28.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER" layoutX="2.0" layoutY="85.0" prefHeight="52.0" prefWidth="230.0" text="Monitoring" textFill="#ede6b9">
+               <font>
+                  <Font name="Verdana" size="28.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER" layoutX="-1.0" layoutY="137.0" prefHeight="52.0" prefWidth="230.0" text="System" textFill="#ede6b9">
+               <font>
+                  <Font name="Verdana" size="28.0" />
+               </font>
+            </Label>
+            <Line endX="100.0" layoutX="114.0" layoutY="200.0" startX="-100.0" stroke="#ede6b9" />
+            <Label alignment="CENTER" layoutX="2.0" layoutY="348.0" prefHeight="52.0" prefWidth="230.0" text="Copyrights (c). All Rights Reserved " textFill="WHITE">
+               <font>
+                  <Font name="Verdana" size="10.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="102.0" fitWidth="98.0" layoutX="65.0" layoutY="233.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../img/logo.png" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+   </left>
+   <right>
+      <AnchorPane prefHeight="400.0" prefWidth="332.0" BorderPane.alignment="CENTER">
+         <children>
+            <Label alignment="CENTER" layoutX="28.0" layoutY="14.0" prefHeight="52.0" prefWidth="230.0" text="Secure Login" textFill="#4b4c7d">
+               <font>
+                  <Font name="Verdana" size="28.0" />
+               </font>
+            </Label>
+            <Line endX="100.0" layoutX="143.0" layoutY="66.0" startX="-100.0" stroke="#4b4c7d" />
+            <TextField fx:id="usernameTextField" layoutX="63.0" layoutY="117.0" prefHeight="26.0" prefWidth="200.0" promptText="Username" />
+            <PasswordField fx:id="passwordPasswordField" layoutX="63.0" layoutY="187.0" prefHeight="26.0" prefWidth="200.0" promptText="Password" />
+            <Button fx:id="loginButton" layoutX="15.0" layoutY="250.0" mnemonicParsing="false" onAction="#loginButtonOnAction" prefHeight="30.0" prefWidth="258.0" style="-fx-background-color: #4b4c7d;" text="Login" textFill="#ede6b9">
+               <font>
+                  <Font name="Verdana" size="20.0" />
+               </font>
+            </Button>
+            <Button fx:id="cancelButton" layoutX="15.0" layoutY="315.0" mnemonicParsing="false" onAction="#cancelButtonOnAction" prefHeight="30.0" prefWidth="258.0" style="-fx-background-color: #4b4c7d;" text="Cancel" textFill="#ede6b9">
+               <font>
+                  <Font name="Verdana" size="20.0" />
+               </font>
+            </Button>
+            <ImageView fitHeight="25.0" fitWidth="25.0" layoutX="30.0" layoutY="118.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../img/userlogo.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="25.0" fitWidth="25.0" layoutX="30.0" layoutY="188.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../img/icons8-password-key-24.png" />
+               </image>
+            </ImageView>
+            <Label fx:id="loginMessageLabel" alignment="CENTER" layoutX="-1.0" layoutY="67.0" prefHeight="33.0" prefWidth="288.0" textFill="RED">
+               <font>
+                  <Font name="Verdana" size="14.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+   </right>
+</BorderPane>
